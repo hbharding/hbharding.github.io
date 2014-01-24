@@ -13,6 +13,12 @@
 $museo-slab: "museo-slab";
 
 ///////////////////////////////////////////////////
+// INCLUE
+///////////////////////////////////////////////////
+@import "icons";
+
+
+///////////////////////////////////////////////////
 // MAIN
 ///////////////////////////////////////////////////
 
@@ -50,17 +56,14 @@ body {
 
 		&:hover {
 			@include transform(rotateY(180deg) translateX(50%) translateY(-50%));
-			// span {
-			// 	@include long-shadow(#1E7C94,200, top-left);
-			// }
 		}
 
 		span {
 			color: #14171E;
 			font-family: $museo-slab;
 			font-weight: 100;
-			font-size: 32vh;
-			line-height: 60vh;
+			font-size: 40vh;
+			line-height: 75vh;
 			// @include transition(text-shadow .5s linear);
 			@include long-shadow(#1E7C94, 200, bottom-right);
 		}
