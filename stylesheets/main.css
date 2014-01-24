@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "github-site";
+  src: url("fonts/github-site.eot");
+  src: url("fonts/github-site.eot?#iefix") format("embedded-opentype"), url("fonts/github-site.woff") format("woff"), url("fonts/github-site.ttf") format("truetype"), url("fonts/github-site.svg#github-site") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 15, ../sass/_icons.scss */
+[data-icon]:before {
+  font-family: "github-site" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 29, ../sass/_icons.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "github-site" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 41, ../sass/_icons.scss */
+.icon-icon-hard-hat:before {
+  content: "a";
+}
+
+/* line 25, ../sass/main.scss */
+.typekit-badge {
+  display: none !important;
+}
+
+/* line 29, ../sass/main.scss */
+body {
+  margin: 0;
+}
+
+/* line 34, ../sass/main.scss */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background-color: #14171E;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+}
+/* line 42, ../sass/main.scss */
+.container .circle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 60vh;
+  height: 60vh;
+  background-color: #2191AE;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 57, ../sass/main.scss */
+.container .circle:hover {
+  -webkit-transform: rotateY(180deg) translateX(50%) translateY(-50%);
+  -moz-transform: rotateY(180deg) translateX(50%) translateY(-50%);
+  -ms-transform: rotateY(180deg) translateX(50%) translateY(-50%);
+  -o-transform: rotateY(180deg) translateX(50%) translateY(-50%);
+  transform: rotateY(180deg) translateX(50%) translateY(-50%);
+}
+/* line 61, ../sass/main.scss */
+.container .circle span {
+  color: #14171E;
+  font-family: "museo-slab";
+  font-weight: 100;
+  font-size: 40vh;
+  line-height: 75vh;
+  text-shadow: 200px 200px 0 #1e7c94, 199px 199px 0 #1e7c94, 198px 198px 0 #1e7c94, 197px 197px 0 #1e7c94, 196px 196px 0 #1e7c94, 195px 195px 0 #1e7c94, 194px 194px 0 #1e7c94, 193px 193px 0 #1e7c94, 192px 192px 0 #1e7c94, 191px 191px 0 #1e7c94, 190px 190px 0 #1e7c94, 189px 189px 0 #1e7c94, 188px 188px 0 #1e7c94, 187px 187px 0 #1e7c94, 186px 186px 0 #1e7c94, 185px 185px 0 #1e7c94, 184px 184px 0 #1e7c94, 183px 183px 0 #1e7c94, 182px 182px 0 #1e7c94, 181px 181px 0 #1e7c94, 180px 180px 0 #1e7c94, 179px 179px 0 #1e7c94, 178px 178px 0 #1e7c94, 177px 177px 0 #1e7c94, 176px 176px 0 #1e7c94, 175px 175px 0 #1e7c94, 174px 174px 0 #1e7c94, 173px 173px 0 #1e7c94, 172px 172px 0 #1e7c94, 171px 171px 0 #1e7c94, 170px 170px 0 #1e7c94, 169px 169px 0 #1e7c94, 168px 168px 0 #1e7c94, 167px 167px 0 #1e7c94, 166px 166px 0 #1e7c94, 165px 165px 0 #1e7c94, 164px 164px 0 #1e7c94, 163px 163px 0 #1e7c94, 162px 162px 0 #1e7c94, 161px 161px 0 #1e7c94, 160px 160px 0 #1e7c94, 159px 159px 0 #1e7c94, 158px 158px 0 #1e7c94, 157px 157px 0 #1e7c94, 156px 156px 0 #1e7c94, 155px 155px 0 #1e7c94, 154px 154px 0 #1e7c94, 153px 153px 0 #1e7c94, 152px 152px 0 #1e7c94, 151px 151px 0 #1e7c94, 150px 150px 0 #1e7c94, 149px 149px 0 #1e7c94, 148px 148px 0 #1e7c94, 147px 147px 0 #1e7c94, 146px 146px 0 #1e7c94, 145px 145px 0 #1e7c94, 144px 144px 0 #1e7c94, 143px 143px 0 #1e7c94, 142px 142px 0 #1e7c94, 141px 141px 0 #1e7c94, 140px 140px 0 #1e7c94, 139px 139px 0 #1e7c94, 138px 138px 0 #1e7c94, 137px 137px 0 #1e7c94, 136px 136px 0 #1e7c94, 135px 135px 0 #1e7c94, 134px 134px 0 #1e7c94, 133px 133px 0 #1e7c94, 132px 132px 0 #1e7c94, 131px 131px 0 #1e7c94, 130px 130px 0 #1e7c94, 129px 129px 0 #1e7c94, 128px 128px 0 #1e7c94, 127px 127px 0 #1e7c94, 126px 126px 0 #1e7c94, 125px 125px 0 #1e7c94, 124px 124px 0 #1e7c94, 123px 123px 0 #1e7c94, 122px 122px 0 #1e7c94, 121px 121px 0 #1e7c94, 120px 120px 0 #1e7c94, 119px 119px 0 #1e7c94, 118px 118px 0 #1e7c94, 117px 117px 0 #1e7c94, 116px 116px 0 #1e7c94, 115px 115px 0 #1e7c94, 114px 114px 0 #1e7c94, 113px 113px 0 #1e7c94, 112px 112px 0 #1e7c94, 111px 111px 0 #1e7c94, 110px 110px 0 #1e7c94, 109px 109px 0 #1e7c94, 108px 108px 0 #1e7c94, 107px 107px 0 #1e7c94, 106px 106px 0 #1e7c94, 105px 105px 0 #1e7c94, 104px 104px 0 #1e7c94, 103px 103px 0 #1e7c94, 102px 102px 0 #1e7c94, 101px 101px 0 #1e7c94, 100px 100px 0 #1e7c94, 99px 99px 0 #1e7c94, 98px 98px 0 #1e7c94, 97px 97px 0 #1e7c94, 96px 96px 0 #1e7c94, 95px 95px 0 #1e7c94, 94px 94px 0 #1e7c94, 93px 93px 0 #1e7c94, 92px 92px 0 #1e7c94, 91px 91px 0 #1e7c94, 90px 90px 0 #1e7c94, 89px 89px 0 #1e7c94, 88px 88px 0 #1e7c94, 87px 87px 0 #1e7c94, 86px 86px 0 #1e7c94, 85px 85px 0 #1e7c94, 84px 84px 0 #1e7c94, 83px 83px 0 #1e7c94, 82px 82px 0 #1e7c94, 81px 81px 0 #1e7c94, 80px 80px 0 #1e7c94, 79px 79px 0 #1e7c94, 78px 78px 0 #1e7c94, 77px 77px 0 #1e7c94, 76px 76px 0 #1e7c94, 75px 75px 0 #1e7c94, 74px 74px 0 #1e7c94, 73px 73px 0 #1e7c94, 72px 72px 0 #1e7c94, 71px 71px 0 #1e7c94, 70px 70px 0 #1e7c94, 69px 69px 0 #1e7c94, 68px 68px 0 #1e7c94, 67px 67px 0 #1e7c94, 66px 66px 0 #1e7c94, 65px 65px 0 #1e7c94, 64px 64px 0 #1e7c94, 63px 63px 0 #1e7c94, 62px 62px 0 #1e7c94, 61px 61px 0 #1e7c94, 60px 60px 0 #1e7c94, 59px 59px 0 #1e7c94, 58px 58px 0 #1e7c94, 57px 57px 0 #1e7c94, 56px 56px 0 #1e7c94, 55px 55px 0 #1e7c94, 54px 54px 0 #1e7c94, 53px 53px 0 #1e7c94, 52px 52px 0 #1e7c94, 51px 51px 0 #1e7c94, 50px 50px 0 #1e7c94, 49px 49px 0 #1e7c94, 48px 48px 0 #1e7c94, 47px 47px 0 #1e7c94, 46px 46px 0 #1e7c94, 45px 45px 0 #1e7c94, 44px 44px 0 #1e7c94, 43px 43px 0 #1e7c94, 42px 42px 0 #1e7c94, 41px 41px 0 #1e7c94, 40px 40px 0 #1e7c94, 39px 39px 0 #1e7c94, 38px 38px 0 #1e7c94, 37px 37px 0 #1e7c94, 36px 36px 0 #1e7c94, 35px 35px 0 #1e7c94, 34px 34px 0 #1e7c94, 33px 33px 0 #1e7c94, 32px 32px 0 #1e7c94, 31px 31px 0 #1e7c94, 30px 30px 0 #1e7c94, 29px 29px 0 #1e7c94, 28px 28px 0 #1e7c94, 27px 27px 0 #1e7c94, 26px 26px 0 #1e7c94, 25px 25px 0 #1e7c94, 24px 24px 0 #1e7c94, 23px 23px 0 #1e7c94, 22px 22px 0 #1e7c94, 21px 21px 0 #1e7c94, 20px 20px 0 #1e7c94, 19px 19px 0 #1e7c94, 18px 18px 0 #1e7c94, 17px 17px 0 #1e7c94, 16px 16px 0 #1e7c94, 15px 15px 0 #1e7c94, 14px 14px 0 #1e7c94, 13px 13px 0 #1e7c94, 12px 12px 0 #1e7c94, 11px 11px 0 #1e7c94, 10px 10px 0 #1e7c94, 9px 9px 0 #1e7c94, 8px 8px 0 #1e7c94, 7px 7px 0 #1e7c94, 6px 6px 0 #1e7c94, 5px 5px 0 #1e7c94, 4px 4px 0 #1e7c94, 3px 3px 0 #1e7c94, 2px 2px 0 #1e7c94, 1px 1px 0 #1e7c94;
+}
+/* line 71, ../sass/main.scss */
+.container .text {
+  position: absolute;
+  bottom: 12vh;
+  width: 100%;
+  text-align: center;
+  color: #2191AE;
+  font-size: 2em;
+  font-family: "museo-slab";
+  font-weight: 100;
+}
