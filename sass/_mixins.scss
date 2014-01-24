@@ -1,0 +1,33 @@
+@mixin long-shadow($color, $size, $direction) {
+    $ts: null;
+    @for $i from 1 through $size {
+        @if $direction == "top" {
+            $ts: 0 #{$i * -1}px 0 $color, $ts
+        }
+        @else if $direction == "right" {
+             $ts: #{$i}px 0 0 $color, $ts
+        }
+        @else if $direction == "bottom" {
+            $ts: 0 #{$i}px 0 $color, $ts
+        }
+        @else if $direction == "left" {
+            $ts: #{$i * -1}px 0 0 $color, $ts
+        }
+        @else if $direction == "top-left" {
+            $ts: #{$i * -1}px #{$i * -1}px 0 $color, $ts
+        }
+        @else if $direction == "top-right" {
+            $ts: #{$i}px #{$i * -1}px 0 $color, $ts
+        }
+        @else if $direction == "bottom-left" {
+            $ts: #{$i * -1}px #{$i}px 0 $color, $ts
+        }
+        @else if $direction == "bottom-right" {
+            $ts: #{$i}px #{$i}px 0 $color, $ts
+        }
+        @else if $direction == "center" {
+            $ts: 0 0 $color, $ts
+        }
+    }
+    text-shadow: $ts;
+}
