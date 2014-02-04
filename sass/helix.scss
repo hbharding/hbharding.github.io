@@ -54,6 +54,7 @@ body {
 	$height: 180px;
 	$height: 180px;
 	$distance: 492px;
+	$distance: 692px;
 
 	ul {
 		position: absolute;
@@ -67,16 +68,12 @@ body {
 		@include transform(
 			translate3d(0, 0, -$distance)
 			rotateY(0deg)
-			// rotateX(0deg)
-			// rotateZ(0deg)
 		);
 
 		&.down {
 			@include transform(
 				translate3d(0, -3500px, -$distance)
 				rotateY(1080deg)
-				// rotateX(360deg)
-				// rotateZ(360deg)
 			);
 		}
 	}
