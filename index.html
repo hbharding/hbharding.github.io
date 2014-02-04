@@ -1,14 +1,18 @@
 ---
 layout: default
-title: Henry Harding
+title: hbharding
 ---
 
 <div class="container">
-	<div class="circle">
-		<span><i class="icon-icon-hard-hat"></i></span>
-		
-	</div>
-	<div class="text">
-		Under Construction
-	</div>
+	<ul class="menu">
+		<li class="heading">STUFF</li>
+		{% for post in site.posts %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
 </div>
+
+
+{% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}

@@ -1,0 +1,32 @@
+{
+  "name": "hbharding.github.io",
+  "version": "0.0.0",
+  "description": "hbharding.github.io",
+  "main": "foo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbharding/hbharding.github.io.git"
+  },
+  "author": "Henry Harding",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/hbharding/hbharding.github.io/issues"
+  },
+  "homepage": "https://github.com/hbharding/hbharding.github.io",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-cssc": "*",
+    "grunt-htmlhint": "*",
+    "matchdep": "*",
+    "grunt-concurrent": "~0.4.3",
+    "grunt-express-server": "~0.4.11",
+    "grunt-contrib-compass": "~0.7.0"
+  }
+}

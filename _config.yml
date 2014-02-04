@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Henry Harding
 markdown: redcarpet
 pygments: true
 baseurl: '/'
+exclude: [sass, grunt]
