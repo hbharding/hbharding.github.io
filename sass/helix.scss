@@ -103,7 +103,7 @@ $distance: 492px;
 		&.down {
 			@include transform(
 				translate3d(0, 0, -$distance)
-				rotateY(1080deg)
+				rotateY(0deg)
 				scale(1)
 				rotateX(-90deg)
 			);

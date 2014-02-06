@@ -121,11 +121,11 @@ body {
     -o-transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg);
     transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg); }
     .spiral ul.down {
-      -webkit-transform: translate3d(0, 0, -492px) rotateY(1080deg) scale(1) rotateX(-90deg);
-      -moz-transform: translate3d(0, 0, -492px) rotateY(1080deg) scale(1) rotateX(-90deg);
-      -ms-transform: translate3d(0, 0, -492px) rotateY(1080deg) scale(1) rotateX(-90deg);
-      -o-transform: translate3d(0, 0, -492px) rotateY(1080deg) scale(1) rotateX(-90deg);
-      transform: translate3d(0, 0, -492px) rotateY(1080deg) scale(1) rotateX(-90deg); }
+      -webkit-transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg);
+      -moz-transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg);
+      -ms-transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg);
+      -o-transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg);
+      transform: translate3d(0, 0, -492px) rotateY(0deg) scale(1) rotateX(-90deg); }
       .spiral ul.down li:nth-child(1) {
         -webkit-transform: rotateY(0deg) translateY(0px) translateZ(692px) rotateX(-1800deg) rotateZ(1800deg);
         -moz-transform: rotateY(0deg) translateY(0px) translateZ(692px) rotateX(-1800deg) rotateZ(1800deg);
