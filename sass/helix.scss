@@ -97,6 +97,7 @@ $distance: 492px;
 			translate3d(0, 0, -$distance)
 			rotateY(0deg)
 			scale(1)
+			rotateX(-90deg)
 		);
 
 		&.down {
@@ -104,6 +105,7 @@ $distance: 492px;
 				translate3d(0, -3500px, -$distance)
 				rotateY(1080deg)
 				scale(1)
+				rotateX(-90deg)
 			);
 
 			@for $i from 0 through 201 {
