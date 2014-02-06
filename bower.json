@@ -16,5 +16,11 @@
   ],
   "devDependencies": {
     "bourbon": "~3.1.8"
+  },
+  "dependencies": {
+    "angular-route": "~1.2.11",
+    "angular": "~1.2.11",
+    "buzz": "~1.1.0",
+    "async": "~0.2.5"
   }
 }

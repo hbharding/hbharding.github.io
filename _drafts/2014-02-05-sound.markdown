@@ -1,0 +1,15 @@
+---
+layout: sound
+title:  "Sound"
+date:   2014-02-05 19:49:36
+permalink: sound
+---
+<div class="wrapper" ng-hide="isPlaying">
+	<input class="simple" ng-model="performer" placeholder="Write a composition"/>
+	<a class="toggle" ng-click="isPlaying=!isPlaying">Start</a>
+</div>
+
+<div class="wrapper" ng-show="isPlaying">
+	<visual class="simple" ng-show="isPlaying" part="<<performer>>"></visual>
+	<a class="toggle" ng-click="isPlaying=!isPlaying">Pause</a>
+</div>

@@ -1,0 +1,96 @@
+#helix-3 {
+	background-color: #262B38;
+	@include perspective(1000px);
+	$width: 102px;
+	$height: 180px;
+	$height: 358px;
+	$distance: 492px;
+
+	ul {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0; right: 0; bottom: 0; left: 0;
+		margin: 0;
+		list-style: none;
+		@include transition(all 10s ease-in-out);
+		@include transform-style(preserve-3d);
+		@include transform(
+			translate3d(0, 0, -200px)
+			rotateY(0deg)
+			scale(1)
+			rotateX(0deg)
+			rotateZ(0deg)
+		);
+
+		&.down {
+			@include transform(
+				translate3d(0, -2000px, -200px)
+				rotateY(360deg)
+				scale(1)
+				rotateX(0deg)
+				rotateZ(0deg)
+			);
+
+
+			@for $i from 0 through 301 {
+				li:nth-child(#{$i+1}) {
+					// background: hsl(200 + $i*1.1,100%,30%);
+					@include transform(
+						rotateY($i*10deg)
+						translateY($i*10px)
+						translateZ($distance + 100)
+						rotateX(0deg)
+						rotateY(0deg)
+					);
+				}
+			}
+
+		}
+		
+	}
+
+	li {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -$height/2;
+		margin-left: -$width/2;
+		display: block;
+		width: $width;
+		height: $height;
+		opacity: .8;
+		// @include backface-visibility(hidden);
+		@include transition(all 10s ease-in-out);
+	}
+
+	@for $i from 0 through 301 {
+		
+		li:nth-child(#{$i+1}) {
+			background: hsl($i*1.1,100%,30%);
+			$delay: $i*.1s;
+			@include transform(
+				rotateY($i*10deg)
+				translateY($i*10px)
+				translateZ($distance + 100)
+				rotateX(0deg)
+				rotateY(0deg)
+			);
+				// @include transition(all 10s ease-in-out);
+			// @include transition-delay($delay);
+
+			// &:hover {
+			// 	@include transform(
+			// 		rotateY($i*10deg)
+			// 		translateY($i*18px)
+			// 		translateZ($distance + 50)
+			// 		rotateX(0deg)
+			// 		rotateZ(0deg)
+			// 	);
+			// }
+		}
+	}
+
+	// li:nth-child(1) { @include transform( translate3d(0,0, $distance) );}
+}
