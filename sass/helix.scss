@@ -45,6 +45,34 @@ body {
 	background-color: #14171E;
 }
 
+$distance: 492px;
+@include keyframes(bulge) {
+	0% {
+		@include transform(
+			
+			translateZ($distance)
+			
+		);
+	}
+	50% {
+		@include transform(
+			
+			translateZ($distance + 200)
+			
+		);
+	}
+	100% {
+		@include transform(
+			
+			translateZ($distance)
+		
+		);
+	}
+}
+
+
+
+
 .spiral {
 	@include perspective(1000px);
 	// @include transform-origin(center center);
@@ -54,7 +82,7 @@ body {
 	$height: 180px;
 	$height: 180px;
 	$distance: 492px;
-	$distance: 692px;
+	// $distance: 692px;
 
 	ul {
 		position: absolute;
@@ -63,19 +91,37 @@ body {
 		top: 0; right: 0; bottom: 0; left: 0;
 		margin: 0;
 		list-style: none;
-		@include transition(all 5s ease-in-out);
+		@include transition(all 10s ease-in-out);
 		@include transform-style(preserve-3d);
 		@include transform(
 			translate3d(0, 0, -$distance)
 			rotateY(0deg)
+			scale(1)
 		);
 
 		&.down {
 			@include transform(
 				translate3d(0, -3500px, -$distance)
 				rotateY(1080deg)
+				scale(1)
 			);
+
+			@for $i from 0 through 201 {
+				li:nth-child(#{$i+1}) {
+					@include transform(
+						rotateY($i*36deg)
+						translateY($i*40px)
+						translateZ($distance + 200)
+						rotateX(-1800deg)
+						rotateZ(1800deg)
+					);
+					
+					
+				}
+			}
+
 		}
+		
 	}
 
 	li {
@@ -89,13 +135,8 @@ body {
 		width: $width;
 		height: $height;
 		opacity: .5;
-
 		// @include backface-visibility(hidden);
-		@include transition(all .5s ease-in-out);
-		// &:hover {
-		// 	@include transform(translateZ($distance + 10px) !important);
-		// }
-
+		@include transition(all 10s ease-in-out);
 	}
 
 	@for $i from 0 through 201 {
@@ -106,16 +147,16 @@ body {
 				rotateY($i*36deg)
 				translateY($i*18px)
 				translateZ($distance)
-				// rotateX(0deg)
-				// rotateZ(0deg)
+				rotateX(0deg)
+				rotateZ(0deg)
 			);
 			&:hover {
 				@include transform(
 					rotateY($i*36deg)
 					translateY($i*18px)
 					translateZ($distance + 50)
-					// rotateX(360deg)
-					// rotateZ(360deg)
+					rotateX(0deg)
+					rotateZ(0deg)
 				);
 			}
 		}
