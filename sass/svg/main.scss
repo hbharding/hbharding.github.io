@@ -1,0 +1,52 @@
+
+///////////////////////////////////////////////////
+// IMPORTS
+///////////////////////////////////////////////////
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "mixins";
+
+
+///////////////////////////////////////////////////
+// VARIABLES
+///////////////////////////////////////////////////
+
+//fonts
+$museo-slab: "museo-slab";
+
+///////////////////////////////////////////////////
+// INCLUE
+///////////////////////////////////////////////////
+@import "icons";
+
+///////////////////////////////////////////////////
+// MAIN
+///////////////////////////////////////////////////
+
+.typekit-badge {
+	display: none !important;
+}
+
+*, *:before, *:after {
+  @include box-sizing('border-box');
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #F5F5F5;
+	font-family: "Helvetica Neue", $museo-slab;
+	font-weight: 100;
+}
+
+.container {
+	text-align: center;
+}
+
+#svg {
+	width: 100vw;
+	height: 100vh;
+	background: #61C1F8;
+	// margin: 0 auto;
+}
+
