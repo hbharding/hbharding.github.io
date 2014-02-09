@@ -4,30 +4,29 @@ $(document).ready(function() {
 
 	function lightOn() {
 		this.attr({
-			fill: "#ff0000"
+			opacity: 1
 		});
 	}
 
 	function lightOff() {
 		this.attr({
-			fill: "#ffff00"
+			opacity: 0
 		});
 	}
 
-
 	Snap.load("../assets/svg/robot-test.svg", function(frag) {
 		var g = frag.select("g");
-		g.select("#light-group").hover(lightOn, lightOff);
+		// g.select("#light-group").hover(lightOn, lightOff);
 			// .animate({
 			// 	fill
 			// } 200);
-		g.select("#light-2").hover(lightOn, lightOff);
-		g.select("#light-3").hover(lightOn, lightOff);
+		g.select("#red-light").hover(lightOn, lightOff);
+		g.select("#yellow-light").hover(lightOn, lightOff);
+		g.select("#green-light").hover(lightOn, lightOff);
+		// g.select("#light-3").hover(lightOn, lightOff);
 		// g.select("#light-2").hover(lightOn('#00ffff'), lightOff('#00ffff'));
 		// g.select("#light-3").hover(lightOn('#00ff00'), lightOff('#00ff00'));
-		
-		g.drag();
-
+	
 		s.append(g);
 	});
 

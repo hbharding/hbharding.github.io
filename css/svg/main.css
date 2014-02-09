@@ -56,3 +56,8 @@ body {
   width: 100vw;
   height: 100vh;
   background: #61C1F8; }
+  #svg #red-light, #svg #yellow-light, #svg #green-light {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s ease-out;
+    -moz-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out; }
