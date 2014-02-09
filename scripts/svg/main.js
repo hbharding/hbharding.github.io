@@ -14,19 +14,46 @@ $(document).ready(function() {
 		});
 	}
 
-	Snap.load("../assets/svg/robot-test.svg", function(frag) {
-		var g = frag.select("g");
-		// g.select("#light-group").hover(lightOn, lightOff);
-			// .animate({
-			// 	fill
-			// } 200);
-		g.select("#red-light").hover(lightOn, lightOff);
-		g.select("#yellow-light").hover(lightOn, lightOff);
-		g.select("#green-light").hover(lightOn, lightOff);
-		// g.select("#light-3").hover(lightOn, lightOff);
-		// g.select("#light-2").hover(lightOn('#00ffff'), lightOff('#00ffff'));
-		// g.select("#light-3").hover(lightOn('#00ff00'), lightOff('#00ff00'));
-	
+	Snap.load("../assets/svg/robot-test2.svg", function(frag) {
+		
+		var g = frag.select("g"),
+				robot = g.select("#robot"),
+				lights = {
+					red    : g.select("#red-light"),
+					yellow : g.select("#yellow-light"),
+					green  : g.select("#green-light")
+				},
+				wire = g.select("#wire"),
+				wireConfig = {
+					from : wire.attr("d"),
+					to : "M-220,48.188 c0,0,379.637,1.812,594.471,1.812s594.196-1.812,594.196-1.812"
+				};
+
+				// $("#svg").addEventListener('mouseenter', function() {
+				// 	console.log("yay");
+				// });
+
+	wire.animate({ 'd' : wireConfig.to }, 500, mina.easeout);
+					robot.animate({ 'transform' : 't0 -50'}, 500, mina.easeinout);
+
+				console.log(robot);
+
+				robot.mouseover(function() {
+					wire.animate({ 'd' : wireConfig.to }, 500, mina.easeout);
+					robot.animate({ 'transform' : 't0 -50'}, 500, mina.easeout);
+				});
+
+				robot.mouseout(function() {
+					wire.animate({ 'd' : wireConfig.from }, 500, mina.easeout);
+					robot.animate({ 'transform' : 't0 0'}, 500, mina.easeout);
+				});
+
+				// wire.animate({ 'path' : wireConfig.to }, 2000s);
+
+
+		lights.red.hover(lightOn, lightOff);
+		lights.yellow.hover(lightOn, lightOff);
+		lights.green.hover(lightOn, lightOff);
 		s.append(g);
 	});
 

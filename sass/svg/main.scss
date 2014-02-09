@@ -47,11 +47,15 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: #61C1F8;
-	// margin: 0 auto;
+	@include transform(scale(1.5));
 
 	#red-light, #yellow-light, #green-light {
 		opacity: 0;
 		@include transition(opacity .15s ease-out);
 	}
+}
+
+@media (min-width: 600px) {
+	#svg { @include transform(scale(1)); }
 }
 
