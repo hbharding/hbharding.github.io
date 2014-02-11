@@ -1,0 +1,87 @@
+
+///////////////////////////////////////////////////
+// IMPORTS
+///////////////////////////////////////////////////
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "mixins";
+
+
+///////////////////////////////////////////////////
+// VARIABLES
+///////////////////////////////////////////////////
+
+//fonts
+$museo-slab: "museo-slab";
+
+///////////////////////////////////////////////////
+// INCLUE
+///////////////////////////////////////////////////
+@import "icons";
+
+///////////////////////////////////////////////////
+// MAIN
+///////////////////////////////////////////////////
+
+.typekit-badge {
+	display: none !important;
+}
+
+*, *:before, *:after {
+  @include box-sizing('border-box');
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #292B35;
+	background-image: url('../../images/kid4.jpg');
+	background-size: cover;
+	background-position: center;
+	font-family: "Helvetica Neue", $museo-slab;
+	font-weight: 100;
+}
+
+#container {
+	text-align: center;
+	background: rgba(0,0,0,.2);
+	@include transition(background 2s ease-in);
+}
+
+#svg {
+	width: 100vw;
+	height: 100vh;
+	@include transform(scale(1.2));
+
+	#red-light, #yellow-light, #green-light {
+		opacity: 0;
+		@include transition(opacity .15s ease-out);
+	}
+}
+
+#svg {
+
+	// #logo {
+	// 	@include transform(scale(1));
+	// 	@include transform-origin(center);
+	// 	@include transition(all .5s ease-out);
+	// 	&:hover {
+	// 		@include transform(scale(1.1));
+	// 	}
+	// }
+
+
+	// path {
+	// 	@include transition(all .2s ease-in);
+	// 	@include transform(translateY(0px));
+	// 	&:hover {
+	// 		@include transform(translateY(-20px));
+	// 	}
+	// }
+	
+}
+
+@media (min-width: 600px) {
+	#svg { @include transform(scale(1)); }
+}
+
