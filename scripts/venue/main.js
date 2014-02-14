@@ -6,6 +6,7 @@ $(document).ready(function() {
 	Snap.load("../assets/svg/venue-cut.svg", function(frag) {
 		var g = frag.selectAll("g");
 		var tones = frag.select("#tones");
+		var rings = frag.select("#rings");
 		var sections = frag.select("#sections");
 		var webSection = sections.selectAll("#webSection path");
 		var appSection = sections.selectAll("#appSection path");
@@ -62,12 +63,6 @@ $(document).ready(function() {
 				"stroke-width": "9px"
 			}, perform());
 
-
-			// element.hover(function(){
-			// 	this.attr({"opacity":1});
-			// }, function() {
-			// 	this.attr({"opacity":.5});
-			// });
 		}
 
 		appSection.forEach(initPerform); 
@@ -75,7 +70,11 @@ $(document).ready(function() {
 		webSection.forEach(initPerform); 
 
 
-		// s.append(appSection);
+		rings.selectAll("path").attr({
+			"opacity" : .5
+		});
+
+		s.append(rings);
 		s.append(sections);
 		s.append(tones);
 		// s.append(g);
