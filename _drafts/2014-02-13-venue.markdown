@@ -1,0 +1,14 @@
+---
+layout: venue
+title:  "venue"
+date:   2014-02-13 19:49:36
+permalink: venue
+---
+
+hi
+
+<div id="svg-container">
+	<div class="abs-center">
+	<svg id="svg" viewBox="0 0 590 590"></svg>
+	</div>
+</div>

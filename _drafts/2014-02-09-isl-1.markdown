@@ -1,0 +1,16 @@
+---
+layout: isl
+title:  "isl 1"
+date:   2014-02-09 19:49:36
+permalink: isl1
+---
+
+<div id="container">
+	<svg id="svg" viewBox="0 0 1440 900"></svg>
+</div>
+
+
+
+<script>
+	// var stoplight = Snap('#Layer_1')
+</script>

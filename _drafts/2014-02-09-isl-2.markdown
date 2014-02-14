@@ -1,0 +1,17 @@
+---
+layout: isl
+title:  "isl 2"
+date:   2014-02-10 19:49:36
+permalink: isl2
+---
+
+<div id="svg-container">
+	<div class="abs-center">
+	<svg id="svg2" viewBox="0 0 503 334"></svg>
+	</div>
+</div>
+
+
+<script>
+	// var stoplight = Snap('#Layer_1')
+</script>
